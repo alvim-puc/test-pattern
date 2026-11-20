@@ -3,6 +3,7 @@
 <p class="titulo">Implementando Padrões de Teste<br/>(Test Patterns)</p>
 <p class="subtitulo">Object Mother, Data Builder, Stubs e Mocks aplicados ao CheckoutService</p>
 <p class="aluno">Bernardo Souza Alvim<br/>Matrícula: 859148</p>
+<p class="repo">Repositório: <a href="https://github.com/alvim-puc/test-pattern">github.com/alvim-puc/test-pattern</a></p>
 <p class="data">Novembro de 2026</p>
 </div>
 
@@ -10,7 +11,7 @@
 
 ## 1. Visão geral
 
-A suíte foi construída para o `CheckoutService`, o SUT do projeto, e está em `__tests__/CheckoutService.test.js`. Os padrões de criação de dados ficam em `__tests__/builders/`. São seis testes, todos no formato Arrange–Act–Assert, cobrindo: falha no pagamento, compra de cliente padrão, desconto Premium, envio de e-mail e a resiliência a uma falha no e-mail. Os seis passam com `npm test`, e o `CheckoutService.js` fica com 100% de cobertura de linhas e de *branches*. Como checagem extra, troquei o desconto de 10% por 20% no SUT: os dois testes Premium falharam, o que confirma que eles realmente verificam a regra de negócio.
+O código está em [https://github.com/alvim-puc/test-pattern](https://github.com/alvim-puc/test-pattern). A suíte foi construída para o `CheckoutService`, o SUT do projeto, e está em `__tests__/CheckoutService.test.js`. Os padrões de criação de dados ficam em `__tests__/builders/`. São seis testes, todos no formato Arrange–Act–Assert, cobrindo: falha no pagamento, compra de cliente padrão, desconto Premium, envio de e-mail e a resiliência a uma falha no e-mail. Os seis passam com `npm test`, e o `CheckoutService.js` fica com 100% de cobertura de linhas e de *branches*. Como checagem extra, troquei o desconto de 10% por 20% no SUT: os dois testes Premium falharam, o que confirma que eles realmente verificam a regra de negócio.
 
 ## 2. Padrões de criação de dados
 
